@@ -1,0 +1,80 @@
+# EasyInvoice Capstone Project Proposal
+
+## 1. Project Overview
+
+**Project Name:** EasyInvoice  
+**Tagline:** Plain and Simple Invoicing for Freelancers and Small Businesses
+
+EasyInvoice is a minimalist invoicing application built with the MERN stack (MongoDB, Express, React, Node.js). It empowers users—especially freelancers and small businesses—to create, send, and manage invoices, estimates, receipts, and payment records with a clean, intuitive interface.
+
+## 2. Problem Statement
+
+Many invoicing tools overwhelm users with complex features and cluttered interfaces. Freelancers and small business owners need a no-frills solution that delivers core functionality quickly, without a steep learning curve.
+
+## 3. Objectives
+
+- **Simplicity:** Provide a straightforward UI that guides users through invoice creation in three steps.
+- **Portability:** Deployable anywhere via Docker, ensuring the same behavior across environments.
+- **Reliability:** Include PDF generation, email delivery, and secure user authentication.
+- **Visibility:** Dashboard presenting key metrics (total invoiced, paid, unpaid, partial payments).
+
+## 4. Key Features
+
+1. **Invoice Management**  
+   - Create, edit, and delete invoices, estimates, receipts, and bills.
+   - Set due dates and track payment status automatically.
+
+2. **PDF Generation & Email**  
+   - Generate PDF documents using html-pdf.  
+   - Send invoices via email using Nodemailer (SMTP configuration).
+
+3. **Payment Tracking**  
+   - Record full and partial payments with date, method, and notes.
+   - Maintain payment history per invoice.
+
+4. **User Authentication**  
+   - Sign-up and login with email/password (JWT).  
+   - Social login via Google OAuth.
+
+5. **Dashboard Analytics**  
+   - Display totals: received, pending, paid, unpaid, partially paid.
+   - Recent payment activity chart (ApexCharts).
+
+## 5. Technology Stack
+
+| Layer    | Technology           |
+|----------|----------------------|
+| Client   | React, Redux, React Router, Axios, CSS Modules |
+| UI       | Material-UI, Custom CSS, Cloudinary for logos     |
+| Charts   | ApexCharts                                 |
+| Auth     | JSON Web Tokens (JWT), React Google Login       |
+| Server   | Express, Mongoose, bcryptjs, Nodemailer, html-pdf |
+| Database | MongoDB Atlas                                 |
+| DevOps   | Docker, Docker Compose                        |
+
+## 6. Scope & Deliverables
+
+- **Source Code:** Hosted on GitHub under `EasyInvoice` repository.  
+- **Live Demo:** Deployed via Docker Compose on a cloud instance.  
+- **Documentation:** Comprehensive README with setup, usage, and API details.  
+- **Presentation:** Short video demo and slide deck highlighting features.
+
+## 7. Timeline & Daily Plan
+
+| Day      | Date            | Time (IST)      | Tasks                                                 |
+|----------|-----------------|-----------------|-------------------------------------------------------|
+| **Day 1**| April 30, 2025  | 10:00–12:00     | - Review and fork existing codebase                   |
+|          |                 | 12:00–13:00     | - Sketch and finalize minimal UI wireframes           |
+|          |                 | 14:00–17:00     | - Initialize new repo and project scaffolding         |
+|          |                 | 17:00–19:00     | - Set up React client structure and core components   |
+| **Day 2**| May 1, 2025     | 10:00–12:00     | - Define Express API endpoints (CRUD for invoices)    |
+|          |                 | 12:00–13:00     | - Design MongoDB schemas (Invoice, Client, Payment)   |
+|          |                 | 14:00–17:00     | - Integrate front-end forms with back-end via Axios   |
+|          |                 | 17:00–19:00     | - Implement authentication and routing                |
+| **Day 3**| May 2, 2025     | 10:00–12:00     | - Add PDF generation and email sending workflows      |
+|          |                 | 12:00–13:00     | - Build dashboard analytics and charts               |
+|          |                 | 14:00–17:00     | - End-to-end testing and bug fixes                   |
+|          |                 | 17:00–19:00     | - Finalize README, demo video, and presentation slides|
+
+
+
